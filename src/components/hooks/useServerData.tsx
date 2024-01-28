@@ -1,7 +1,7 @@
 // This hook is the assumed SSR pipeline for generating client-side data in the actual app.
 
-const getDeliveryData = (_deliveryId: string) => ({
-  'delivery-id': '654505b5-0e65-4d45-acb2-2196aece6d63',
+const getDeliveryData = (deliveryId: string) => ({
+  deliveryId,
   recipient: {
     address: {
       'address-line-1': '1a Old Nichol St',
@@ -17,8 +17,8 @@ const getDeliveryData = (_deliveryId: string) => ({
   }
 })
 
-const getDriverResponse = (_driverId: string) => ({
-  driverId: '12345678',
+const getDriverResponse = (driverId: string) => ({
+  driverId,
   firstName: 'Akash',
   lastName: 'Joshi',
   preferredName: 'Akash'
